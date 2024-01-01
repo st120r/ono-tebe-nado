@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+.menu-text {
+  color: #000;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.contacts_text {
+  color: #000;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px; /* 135% */
+}
+
+.header_contacts {
+  width: 240px;
+}
+
+.header_menu {
+  top: 92px;
+  left: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  width: 1052px;
+  height: 105px;
+  background-color: transparent;
+  background-color: blue;
+}
+
+.header_menu_div,
+.header_contacts_div {
+  flex: 1;
+}
+.header_logo {
+  flex: 0 0 auto;
+}
