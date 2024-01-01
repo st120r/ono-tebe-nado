@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1100px;  
+  width: 100%;
+  height: 2980px;
+  background-color: darkgreen;
+}
+
+.header {
+  margin: 92px 24px 2783px 24px;
+  background-color: aqua;
+}
+
 .menu-text {
   color: #000;
   font-family: Raleway;
@@ -18,8 +38,18 @@
   line-height: 24.3px; /* 135% */
 }
 
-.header_contacts {
+.header_contacts_div {
   width: 240px;
+  height: 97px;
+  margin: 3px 30px 5px 30px;
+  background-color: burlywood;
+}
+.header_empty_div {
+  flex-shrink: 0;
+  width: 140px;
+  height: 97px;
+  margin: 3px 30px 5px 200px;
+  background-color: burlywood;
 }
 
 .header_menu {
@@ -28,19 +58,52 @@
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   width: 1052px;
   height: 105px;
   background-color: transparent;
-  background-color: blue;
 }
 
 .header_menu_div,
+.header_empty_div,
 .header_contacts_div {
   flex: 1;
 }
 .header_logo {
   flex: 0 0 auto;
+}
+
+.header_menu_div {
+  
+  min-width: 388px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  width: 388px;
+  height: 23px;
+  margin: 41px 30px 41px 34.2px;
+  background-color: azure;
+}
+
+.list-marker {
+  flex-shrink: 0;
+  align-self: center;
+  width: 7px;
+  height: 7px;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.jambotron {
+  position: absolute;
+  width: 1082px;
+  height: 744px;
+  top: 288px;
+  left: 9px;
+  overflow: hidden;
+  background-image: url(/images/lotus-flower_layout_png.png);
+  background-size: cover;
+  background-position: 50% 50%;
 }
