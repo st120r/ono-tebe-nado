@@ -8,22 +8,19 @@ body {
   align-items: center;
   background-color: #fff;
   justify-content: center;
-  align-items: center;
-  width: 1100px;
   max-width: 1100px;
+  width: 100%;
 }
 
 .header {
-  width: 1052px;
   max-width: 1052px;
-  margin: 92px 24px 91px 24px;
+  width: 100%;
+  margin: 92px 24px 65px 24px;
 }
 
 .header-div {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-columns: 41% 18% 18% 24%;
-  align-items: center;
+  grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   margin: 24px;
 }
@@ -32,26 +29,33 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  font-size: 18px;
 }
 
-.header-menu-item-without-underline {
+.menu-active-item {
   text-decoration: none;
 }
 
-.header-menu-item-underline {
+.menu-not-active-item {
   text-decoration: underline;
   text-underline-offset: 4px;
   list-style: circle;
 }
 
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+
 .header-logo-image {
+  justify-self: center;
   width: 148px;
   height: 105px;
 }
 
 .header-text {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -61,7 +65,10 @@ body {
 .header-address {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+  align-items: flex-start;
+  margin-left: 155px;
+  width: 240px;
+  font-size: 18px;
   max-height: 97px;
   font-style: normal;
   line-height: 24.3px;
@@ -70,7 +77,7 @@ body {
 .jambotron {
   position: relative;
   width: 1082px;
-  height: 764px;
+  height: 745px;
   margin-right: auto;
   margin-left: auto;
   background-image: url(/images/cover.jpg);
@@ -97,9 +104,9 @@ body {
 .jambotron-title {
   position: relative;
   z-index: 2;
-  padding: 165px 50px 135px 50px;
+  padding: 165px 50px 127px 50px;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
@@ -114,13 +121,13 @@ body {
   flex-direction: row;
   justify-content: right;
   align-items: center;
-  gap: 78px;
+  gap: 69px;
   padding: 0px 50px 50px;
 }
 
 .jambotron-description-text {
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -132,9 +139,9 @@ body {
 
 .bet-button {
   border: 1px solid #fff;
-  padding: 12px 32px;
+  padding: 12px 29px;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -171,15 +178,15 @@ body {
 }
 
 .lots {
-  width: 1034px;
   max-width: 1034px;
-  margin: 180px 50px;
+  width: 100%;
+  margin: 180px auto 50px auto;
 }
 
 .lots-heading {
   margin: 0px auto 27px 40px;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -190,14 +197,15 @@ body {
 .lots-card-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }
 
 .lots-card-list-item {
   flex-grow: 1;
-  max-width: 328px;
-  min-height: 554px;
+  width: 328px;
+  height: 550px;
   background-color: aqua;
 }
 
@@ -211,10 +219,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
   height: 100%;
-  padding: 50px 40px;
+  padding: 44px 35px 46px 39px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -223,7 +230,7 @@ body {
   z-index: 2;
   display: flex;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
@@ -234,26 +241,27 @@ body {
 }
 
 .card-text {
+  margin-top: -5px;
   z-index: 2;
   display: flex;
   width: 254px;
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 120%;
 }
 
-.first-card-image {
+.first-lot-card-image {
   background-image: url(/images/card-lot-01.png);
 }
 
-.second-card-image {
+.second-lot-card-image {
   background-image: url(/images/card-lot-02.png);
 }
 
-.third-card-image {
+.third-lot-card-image {
   background-image: url(/images/card-lot-03.png);
 }
 
@@ -272,7 +280,7 @@ body {
   display: block;
   margin: 30px auto 0px 40px;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -281,12 +289,12 @@ body {
 }
 
 .about { 
-  margin: auto; 
+  margin-top: 176px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
-  width: 1082px;
   max-width: 1082px;
+  width: 100%;
   height: 546px;
 }
 
@@ -294,7 +302,7 @@ body {
   display: inline-flex;
   width: 352px;
   height: 237px;
-  padding: 0px 45px 0px 70px;
+  padding: 0 45px 0px 70px;
   justify-content: flex-end;
   align-items: center;
   flex-shrink: 0;
@@ -317,6 +325,7 @@ body {
 }
 
 .content-text {
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -327,9 +336,9 @@ body {
 }
 
 .about-title {
-  margin: 100px 0px;
+  margin: 100px 0px 73px 0px;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -340,20 +349,26 @@ body {
 
 .about-text {
   max-width: 693px;
-  margin-top: 5px;
+  width: 100%;
+  height: auto;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  line-height: normal;
+  line-height: 23px;
+
 }
 
 .footer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: space-between;
-  width: 984px;
+  align-items: flex-start;
   max-width: 984px;
+  width: 100%;
   max-height: 97px;
   margin: 183px 50px 90px;
 }
@@ -361,7 +376,7 @@ body {
 .footer-social-list {
   display: flex;
   justify-content: space-between;
-  width: 240px;
+  width: 236px;
   list-style: none;
 }
 
@@ -372,12 +387,13 @@ body {
 
 .footer-menu {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif; 
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 21px;
   text-align: center;
+
 }
 
 .footer-menu-list {
@@ -390,7 +406,18 @@ body {
 }
 
 .footer-menu-link,
-.underline-address {
+.link-address {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 240px;
+  height: 97px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
 }
